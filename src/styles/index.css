@@ -1,0 +1,32 @@
+/* Import custom font */
+/* saliec bold */
+@font-face {
+  font-family: "Sailec Bold";
+  src:
+    local("Sailec Bold"),
+    url("../fonts/Sailec Bold.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* saliec medium */
+@font-face {
+  font-family: "Sailec Medium";
+  src:
+    local("Sailec Medium"),
+    url("../fonts/Sailec Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* saliec light */
+@font-face {
+  font-family: "Sailec Light";
+  src:
+    local("Sailec Medium"),
+    url("../fonts/Sailec Light.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* Import Custom Styles */
+@import url("boilerplate.css");
+@import url("header.css");
+

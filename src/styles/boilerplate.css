@@ -1,0 +1,301 @@
+/* ====================================
+Default Class Styles across all pages
+======================================= */
+
+:root {
+  --btn-border: 1px solid #79747e;
+  --dark-color: #0c1219;
+  --frame-color: #d1d2e7;
+  --bg-color: #ffffff;
+  --text-black: #1e1f22;
+  --grey-text:#808080;
+  --grey-bg:#A9A9A9;
+  --white-color: #ffffff;
+  --white-bg: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+*::selection {
+  background: #3a8d97;
+  color: #fff;
+}
+::placeholder {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem;
+  text-transform: capitalize;
+  font-size: 0.878rem;
+  font-weight: 400;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Sailec Bold";
+  background: var(--bg-color);
+  color: var(--white-color);
+  counter-reset: count;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 0.85rem;
+  font-family: "Sailec Bold";
+}
+h1 {
+  line-height: initial;
+  font-size: 2.5rem;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 100%;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+  font-family: "Sailec Medium";
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Sailec Bold";
+}
+
+input,
+button {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+img {
+  display: block;
+  border-radius: inherit;
+  width: 100%;
+}
+.img-container {
+  /* display: inline-block;
+margin: 0 auto; */
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+section {
+  padding: 1.5rem 5%;
+}
+
+.cta-btn,
+button:not(.toastify-btn) {
+  padding: 0.75rem 1.2rem;
+  display: inline-block;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: "Sailec Medium";
+  font-weight: 400;
+  background: var(--white-color);
+  color: var(--text-black);
+}
+
+.btn-container {
+  text-align: center;
+}
+.btn-container .cta-btn {
+  display: inline-block;
+  /* width: 120px; */
+  border-radius: 24px;
+  padding: 12px 24px;
+  color: var(--text-black);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* 
+.speech-section .main-contents {
+  height: 150px;
+  width: 100%;
+  border: 1px solid #ffe;
+  border-radius: 12px;
+  margin: 2rem auto;
+  font-size: 16px;
+  word-spacing: normal;
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+.speech-section .main-contents p {
+  color: #fff;
+}
+.speech-section .btn-style {
+  margin-top: 2rem;
+} */
+.cta-btn {
+  text-align: center;
+}
+
+/* ============Form element Stykes========= */
+.form-container .double {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 4%;
+}
+.form-container .double > * {
+  flex-basis: 48%;
+}
+.form-field {
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+}
+.form-field label {
+  text-transform: capitalize;
+  margin-bottom: 0.45rem;
+  font-weight: 400;
+  display: block;
+}
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+.form-field .eye-icon-container,
+.form-field .icon-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 15px;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.form-field .eye-icon-container.active svg path {
+  stroke: cyan;
+}
+
+/* ==============Message info============ */
+.form-container .error-message {
+  color: #f00;
+  font-size: 0.875rem;
+}
+/*============ Flex and Grid Items================ */
+.grid-container-2 > *,
+.grid-container-3 > *,
+.flex-container-2 > *,
+.flex-container-4 > * {
+  margin-bottom: 1.5rem;
+}
+
+/* Custom font class */
+.sailec-medium {
+  font-weight: 400;
+  font-family: "Sailec Medium";
+}
+
+/* ==========================
+For Desktop Device
+=============================*/
+@media (min-width: 980px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .cta-btn,
+  button:not(.toastify-btn) {
+    font-size: 1rem;
+  }
+  section {
+    padding: 2rem 7%;
+  }
+  .flex-container-4,
+  .flex-container-2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 4%;
+  }
+  .flex-container-4 {
+    align-items: flex-start;
+  }
+  .flex-container-2 > * {
+    flex-basis: 48%;
+  }
+  .flex-container-4 > * {
+    flex-basis: 22%;
+  }
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* place-items: center; */
+  }
+  .flex-container-2 > *,
+  .flex-container-4 > *,
+  .grid-container-3 > *,
+  .grid-container-2 > * {
+    margin-bottom: 0;
+  }
+}
+
+/* ==========================
+Large Desktop Device
+==============================*/
+@media (min-width: 1200px) {
+  h6 {
+    font-size: 1.25rem;
+  }
+}
