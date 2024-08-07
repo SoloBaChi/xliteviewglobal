@@ -6,7 +6,6 @@ Default Class Styles across all pages
   --btn-border: 1px solid #79747e;
   --dark-color: #0c1219;
   --frame-color: #d1d2e7;
-  --bg-color: #ffffff;
   --text-black: #1e1f22;
   --grey-text:#808080;
   --grey-bg:#A9A9A9;
@@ -44,9 +43,9 @@ a {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Sailec Bold";
-  background: var(--bg-color);
-  color: var(--white-color);
+  font-family: "Poppins",sans-serif;
+  background: #f8f8f8;
+  color: var(--grey-text);
   counter-reset: count;
   overflow-x: hidden;
 }
@@ -56,14 +55,15 @@ h2,
 h3,
 h4,
 h5 {
-  text-transform: capitalize;
-  font-weight: 400;
+  text-transform: initial;
+  font-weight: 600;
   margin-bottom: 0.85rem;
-  font-family: "Sailec Bold";
+  font-family: "Poppins",sans-serif;
 }
 h1 {
   line-height: initial;
   font-size: 2.5rem;
+  font-weight:800;
 }
 h2,
 h3,
@@ -74,6 +74,7 @@ h6 {
 }
 h2 {
   font-size: 2rem;
+  font-weight:600;
 }
 h3 {
   font-size: 1.5rem;
@@ -111,6 +112,7 @@ ul {
 p {
   font-size: 0.875rem;
   font-weight: 400;
+  line-height:1.8;
 }
 section {
   padding: 1.5rem 5%;
@@ -247,6 +249,7 @@ For Desktop Device
   h6 {
     font-size: 1.25rem;
   }
+  a,
   p {
     font-size: 1rem;
   }
