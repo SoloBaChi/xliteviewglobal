@@ -1,0 +1,53 @@
+
+
+/* *****Home Styles */
+.hero-section{
+position: relative;
+background:url(../../public/assets/images/hero-bg.png) no-repeat center/cover #f8f8f8;
+z-index:-2;
+}
+.hero-section h2{
+/* color:#1e90ff; */
+}
+.hero-section p{
+color:#f8f8f8;
+}
+.hero-section::before{
+content:"";
+position: absolute;
+top:0;
+left:0;
+display:inline-block;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.75);
+z-index:-1;
+}
+
+
+
+/* ***Services */
+.card-container{
+box-shadow:2px 2px 4px rgba(0,0,0,0.15);
+display:inline-block;
+padding:1rem;
+margin-bottom:2.4rem;
+}
+
+.card-container h4{
+color:#1e90ff;
+}
+.card-container .icon-container{
+ height:50px;
+ width:50px;
+ background:#fff;
+ border-radius:50%;
+ margin-bottom:1.4rem;
+ box-shadow:1px 2px 4px rgba(0,0,0,0.25);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}
+.card-container .icon-container span{
+/* border:1px solid blue; */
+}

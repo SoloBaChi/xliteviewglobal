@@ -21,6 +21,9 @@ function Menu() {
           <Link to="/services">services</Link>
         </li>
         <li>
+          <Link to="#">products</Link>
+        </li>
+        <li>
           <Link to="https://wa.me/2347049668561" target="_blank">contact us</Link>
         </li>
       </ul>

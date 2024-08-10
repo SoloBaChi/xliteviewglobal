@@ -2,8 +2,8 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <section className="mt-20">
-      <h2 className='text-center text-[#00008b]'>Welcome to Xliteview Global</h2>
+    <section className="hero-section">
+      <h2 className='lg:text-center '>Welcome to Xliteview Global .</h2>
       <p>
       Thank you for visiting Xliteviewglobal, where your security and lighting needs are our top priority. We are thrilled to have the opportunity to offer you innovative solutions that combine advanced technology with exceptional service. Whether you're looking to enhance safety with state-of-the-art CCTV cameras or brighten your space with our premium lighting accessories, we’re here to help you every step of the way
       </p>

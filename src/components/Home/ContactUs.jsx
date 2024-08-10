@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function ContactUs() {
     return (
-        <div className="fixed text-[#0c1219] sailec-medium bottom-14 contact-us right-10 z-5 bg-[#32cd32] rounded-[25px]">
+        <div className="fixed text-[#0c1219] sailec-medium bottom-14 contact-us right-5 md:right-8 z-5 bg-[#32cd32] rounded-[25px]">
             <Link to="https://wa.me/2347049668561" className='flex items-center gap-2 py-2'>
                 <span className="icon">
                     <svg
