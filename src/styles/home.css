@@ -51,3 +51,28 @@ color:#1e90ff;
 .card-container .icon-container span{
 /* border:1px solid blue; */
 }
+
+
+
+/* ***Products */
+.products .product-container a{
+padding:0;
+border-radius:8px;
+}
+.products .product-container .img-container{
+border-radius:8px 8px 0 0; 
+height:400px;
+width:100%;
+}
+.product-container .bottom-section{
+padding:1.4rem;
+text-align:right;
+}
+.product-container .bottom-section p{
+margin-top:2rem;
+padding:0.7rem;
+display:inline-block;
+border-radius:8px;
+background:#000088;
+color:#fff;
+}
